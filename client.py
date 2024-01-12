@@ -36,6 +36,7 @@ while True:
         print(instruction)
         if instruction[0] == 'm':
             # tank_D.on_for_rotations(int(instruction[1]), int(instruction[1]), 0.1, brake=False,block=False)
+            # on until stopped
             tank_D.on(left_speed = int(instruction[1]), right_speed = int(instruction[1]))
             tank_S.on(left_speed = -int(instruction[1]), right_speed = -int(instruction[1]))
 
